@@ -4,12 +4,13 @@
 4月13日的修改情况：
 index.html文件：
 296行：
-<div class="main-n">
+<pre><div class="main-n">
 	 <h3>Jessica Wally</h3>
      <a href=""><img src="img/team/01.jpg" alt=""></a>
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
-
+<pre>
+	
 style.css文件
 536行：
 /*模态框的内容－图片*/
