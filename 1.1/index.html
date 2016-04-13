@@ -262,12 +262,20 @@
   </div>
 </div>
 
+
+  
 <!-- Team Section -->
 <div id="team-section" class="text-center">
   <div class="container">
     <div class="section-title center section-title-b">
+    
+
+           
+
       <h2>Meet the <strong>team</strong></h2>
-      
+     
+
+              
 <!-- 按钮触发模态框 -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" 
    data-target="#myModal">
@@ -280,6 +288,17 @@
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
    <div class="modal-dialog">
+
+    <div id="myCarousel" class="carousel slide">
+   <!-- 轮播（Carousel）指标 -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+   </ol> 
+      <!-- 轮播（Carousel）项目 -->
+   <div class="carousel-inner">
+   <div class="item active">
+
       <div class="modal-content">
          <div class="modal-header">
             <button type="button" class="close" 
@@ -294,27 +313,23 @@
             <!--<ul class="main-l">
               <li>-->
                 <div class="main-n">
-                <h3 class="main-h">Jessica Wally</h3>
+                <a href="#" class="main-h"><h3>Jessica Wally</h3></a>
+                <!--二次弹出效果-->
+            
+               <div class="main-m">
+                   <h3>Jessica Wally</h3> 
+                   <a href="">
+                    <img src="img/team/01.jpg" alt="">
+                   </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                   <a class="main-close">&#215;</a>          
+               </div>
+               <div class="main-m-bg"></div>
+
                 <a href=""><img src="img/team/01.jpg" alt=""></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-             <!-- </li>-->
-              <!--<li><a href=""><img src="img/team/02.jpg" alt=""></a>
-              <h3>Jessica Wally</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </li>
-              <li><a href=""><img src="img/team/03.jpg" alt=""></a>
-              <h3>Jessica Wally</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </li>
-              <li><a href=""><img src="img/team/04.jpg" alt=""></a>
-              <h3>Jessica Wally</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </li>-->
-            <!--</ul>-->
             </div>
          </div>
-        
-
          <div class="modal-footer">
             <button type="button" class="btn btn-default" 
                data-dismiss="modal">关闭
@@ -323,10 +338,62 @@
                提交更改
             </button>-->
          </div>
-
-
-
       </div><!-- /.modal-content -->
+
+      </div>
+
+<div class="item">
+    <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               MEET THE TEAM
+            </h4>
+         </div>
+         <div class="modal-body">
+            <!--<ul class="main-l">
+              <li>-->
+                <div class="main-n">
+                <a href="#" class="main-h"><h3>Jessica Wally</h3></a>
+                <!--二次弹出效果-->
+            
+               <div class="main-m">
+                   <h3>Jessica Wally</h3> 
+                   <a href="">
+                    <img src="img/team/01.jpg" alt="">
+                   </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                   <a class="main-close">&#215;</a>          
+               </div>
+               <div class="main-m-bg"></div>
+
+                <a href=""><img src="img/team/01.jpg" alt=""></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <!--<button type="button" class="btn btn-primary">
+               提交更改
+            </button>-->
+         </div>
+      </div><!-- /.modal-content -->
+</div>
+</div>
+   <!-- 轮播（Carousel）导航 -->
+   <!--<a class="carousel-control left" href="#myCarousel" 
+      data-slide="prev">&lsaquo;</a>
+   <a class="carousel-control right" href="#myCarousel" 
+      data-slide="next">&rsaquo;</a>-->
+</div>
+
+
+
 </div><!-- /.modal -->
 </div>
 
@@ -442,7 +509,6 @@
     </div>
   </div>
 
-
 <!-- Contact Section -->
 <div id="contact-section" class="text-center">
   <div class="container">
@@ -509,24 +575,35 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="assets/js/jquery.min.js"></script>
+ <script type="text/javascript">
+                $(document).ready(function(){
+                  $(".main-h").click(function(){
+
+                    $(".main-m").show();
+
+                    $(".main-m").css({
+                      "opacity":"1",
+                      "visibility":"visible",
+                    });
+                  
+                    $(".main-m-bg").css({
+                      "display":"block",
+                      "cursor":"pointer"
+                    });
+                  });
+                  $(".main-close").click(function(){
+                      $(".main-m").hide();
+                      $(".main-m-bg").css({
+                      "display":"none",
+                      "cursor":"pointer",
+                    });
+                  });
+
+                });
+            </script>
+
 <script src="js/animate.js"></script>
-
- <!-- Swiper JS -->
-<script src="js/swiper.min.js"></script>
-
-  <script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-
-    
-   
-    
-    // 如果需要前进后退按钮
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-
-  })        
-  </script>
-
+ 
 
 <script src="js/owl.carousel.js"></script>
 
