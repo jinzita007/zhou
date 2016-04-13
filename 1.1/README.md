@@ -22,5 +22,8 @@ style.css文件
   height: 200px;
   margin-bottom: 20px;
 }
-
+/*模态框的内容-小标题*/
+.main-n h3{
+	margin-bottom: 30px;
+}
 ```

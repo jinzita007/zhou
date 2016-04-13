@@ -539,6 +539,10 @@ ul.main-l li h3:hover{
   height: 200px;
   margin-bottom: 20px;
 }
+/*模态框的内容-小标题*/
+.main-n h3{
+	margin-bottom: 30px;
+}
 /*翻页效果*/
 .swiper-container {
         width: 100%;
