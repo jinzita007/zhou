@@ -533,7 +533,12 @@ ul.main-l li h3:hover{
     border: 0;
     bottom: 30px;
 }
-
+/*模态框的内容－图片*/
+.main-n img{
+  width: 600px;
+  height: 200px;
+  margin-bottom: 20px;
+}
 /*翻页效果*/
 .swiper-container {
         width: 100%;
