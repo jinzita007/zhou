@@ -41,26 +41,26 @@
 <script src="assets/js/jquery.min.js"></script>
 <!--下拉加载更多内容-->
 <script type="text/javascript" src="js/jquery.showMore.js"></script>
-<!--二次弹窗功能-->
+<!--二次弹窗及图片时弹窗功能-->
 <script type="text/javascript">
                 $(document).ready(function(){
                   $(".main-h,.main-hm-i,.main-h-img").click(function(){
 
-                    $(".main-m").show();
+                    $(".main-m,.main-mm").show();
 
-                    $(".main-m").css({
+                    $(".main-m,.main-mm").css({
                       "opacity":"1",
                       "visibility":"visible",
                     });
                   
-                    $(".main-m-bg").css({
+                    $(".main-m-bg,.main-mm-bg").css({
                       "display":"block",
                       "cursor":"pointer"
                     });
                   });
-                  $(".main-close").click(function(){
-                      $(".main-m").hide();
-                      $(".main-m-bg").css({
+                  $(".main-close,.main-mm-close").click(function(){
+                      $(".main-m,.main-mm").hide();
+                      $(".main-m-bg,.main-mm-bg").css({
                       "display":"none",
                       "cursor":"pointer",
                     });
@@ -322,15 +322,15 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
    <div class="modal-dialog">
 
-    <div id="myCarousel" class="carousel slide">
+    <!--<div id="myCarousel" class="carousel slide">-->
    <!-- 轮播（Carousel）指标 -->
-   <ol class="carousel-indicators">
+   <!--<ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-   </ol> 
-      <!-- 轮播（Carousel）项目 -->
-   <div class="carousel-inner">
-   <div class="item active">
+   </ol>-->
+   <!-- 轮播（Carousel）项目 -->
+   <!--<div class="carousel-inner">
+   <div class="item active">-->
 
       <div class="modal-content">
          <div class="modal-header">
@@ -447,8 +447,8 @@
 
       </div>
 
-<div class="item">
-    <div class="modal-content">
+<!--<div class="item">-->
+    <!--<div class="modal-content">
          <div class="modal-header">
             <button type="button" class="close" 
                data-dismiss="modal" aria-hidden="true">
@@ -457,18 +457,18 @@
             <h4 class="modal-title" id="myModalLabel">
                MEET THE TEAM
             </h4>
-         </div>
-         <div class="modal-body">
+         </div>-->
+         <!--<div class="modal-body">-->
             <!--<ul class="main-l">
               <li>-->
-                <div class="main-n">
+                <!--<div class="main-n">
                   <ul class="showMoreNChildren2" pagesize="1">
                     <li>
                 <div class="main-nn">
-                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>-->
                 <!--二次弹出效果-->
             
-               <div class="main-m">
+               <!--<div class="main-m">
                    <h3>Jessica Wally</h3> 
                    <a href="#">
                     <img src="img/team/01.jpg" alt="">
@@ -540,7 +540,7 @@
                   <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
                   <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
-             </li>
+             </li>-->
                <!--<li>
                <div class="main-nnn">
                 <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
@@ -548,7 +548,7 @@
                 <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                </div>
               </li>-->
-            </ul>
+           <!-- </ul>
               <script type="text/javascript">
               //调用显示更多内容
               $.showMore(".showMoreNChildren2");
@@ -559,26 +559,19 @@
          <div class="modal-footer">
             <button type="button" class="btn btn-default" 
                data-dismiss="modal">关闭
-            </button>
+            </button>-->
             <!--<button type="button" class="btn btn-primary">
                提交更改
             </button>-->
-         </div>
-      </div><!-- /.modal-content -->
-</div>
-</div>
+        <!-- </div>-->
+     <!-- </div>--><!-- /.modal-content -->
+
    <!-- 轮播（Carousel）导航 -->
    <!--<a class="carousel-control left" href="#myCarousel" 
       data-slide="prev">&lsaquo;</a>
    <a class="carousel-control right" href="#myCarousel" 
       data-slide="next">&rsaquo;</a>-->
-</div>
-
-
-
-</div><!-- /.modal -->
-</div>
-
+<!--</div>-->
 
 <!--<div class="swiper-slide">6666</div>
 </div>
@@ -586,12 +579,14 @@
  <!-- 如果需要导航按钮 -->
     <!--<div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>-->
+</div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-    </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+</div>
+
     <div id="row">
       <div class="col-md-3 col-sm-6 team animated hiding" data-animation="fadeInLeft" data-delay="600">
-        <div class="thumbnail"><div class="profile-photo"><a href="#" class="main-h-img"><img src="img/team/01.jpg" alt="..." class="img-circle team-img"></a></div>
+        <div class="thumbnail"><div class="profile-photo"><a class="main-h-img"><img src="img/team/01.jpg" alt="..." class="img-circle team-img"></a></div>
           <div class="caption">
             <h3>Jessica Wally</h3>
             <p>Founder</p>
@@ -601,7 +596,7 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-6 team animated hiding" data-animation="fadeInUp" data-delay="300">
-        <div class="thumbnail"><div class="profile-photo"><a href="#" class="main-h"><img src="img/team/02.jpg" alt="..." class="img-circle team-img"></a></div>
+        <div class="thumbnail"><div class="profile-photo"><img src="img/team/02.jpg" alt="..." class="img-circle team-img"></div>
           <div class="caption">
             <h3>Mike Sloan</h3>
             <p>Web Designer</p>
@@ -611,7 +606,7 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-6 team animated hiding" data-animation="fadeInUp" data-delay="300">
-        <div class="thumbnail"><div class="profile-photo"><a href="#" class="main-h"><img src="img/team/03.jpg" alt="..." class="img-circle team-img"></a></div>
+        <div class="thumbnail"><div class="profile-photo"><img src="img/team/03.jpg" alt="..." class="img-circle team-img"></div>
           <div class="caption">
             <h3>Michele Doe</h3>
             <p>Web Designer</p>
@@ -621,7 +616,7 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-6 team animated hiding" data-animation="fadeInRight" data-delay="600">
-        <div class="thumbnail"><div class="profile-photo"><a href="#" class="main-h"><img src="img/team/04.jpg" alt="..." class="img-circle team-img"></a></div>
+        <div class="thumbnail"><div class="profile-photo"><img src="img/team/04.jpg" alt="..." class="img-circle team-img"></div>
           <div class="caption">
             <h3>Larry Evans</h3>
             <p>Project Manager</p>
@@ -632,18 +627,19 @@
     </div>
     
     <!--按图片时弹窗（详细页）-->
-   <!-- <div class="main-m">
+   <div class="main-mm">
                    <h3>Jessica Wally</h3> 
                    <a href="#">
                     <img src="img/team/01.jpg" alt="">
                    </a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                   <a class="main-close">&#215;</a>          
-    </div>-->
+                   <a class="main-mm-close">&#215;</a>          
+    </div>
+    <div class="main-mm-bg"></div>
 
   </div>
 </div>
-
+</div>
 <!-- Testimonials Section -->
 <div id="testimonials-section" class="text-center">
   <div class="container">

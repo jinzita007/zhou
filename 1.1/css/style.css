@@ -630,3 +630,41 @@ ul.main-l li h3:hover{
    position: relative;
    right: 100px;
 }
+/*图片时弹窗（详细页)*/
+.main-mm{
+	border-radius: 6px;
+	visibility: hidden;
+	/*top: 0;*/
+    /*left: 0;
+    right: 0;*/
+
+	height: 400px;
+	background: #eee;
+	position: absolute;
+	z-index: 101;
+	text-align: center;
+}
+/*图片时弹窗（详细页)弹出后背景变成透明的暗淡色*/
+.main-mm-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+}
+/*图片时弹窗（详细页)-关闭效果*/
+.main-mm-close{
+    font-size: 22px;
+	position: absolute;
+	top: 8px;
+	right: 11px;
+	color: #aaa;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	display: block;
+}
