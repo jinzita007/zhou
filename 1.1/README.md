@@ -76,8 +76,7 @@
 ```
 三、插入二次弹出层的html内容：
 312行：
-```
-html
+```html
  <div class="modal-body">
           <div class="main-n">
                 <a href="#" class="main-h"><h3>Jessica Wally</h3></a>
@@ -133,8 +132,7 @@ index.html文件
 
 五、弹出层之后的bootstrap轮播图功能
 292行：
-```
-html
+```html
 <div id="myCarousel" class="carousel slide">
 	...
 <!-- 轮播（Carousel）指标 -->
@@ -172,8 +170,7 @@ index.html文件：
 
 重新修改情况
 style.css文件：
-```
-css
+```css
 /*第一次弹窗的内容样式*/
 /*第一次弹窗的内容的主体*/
 .main-nn{
@@ -204,7 +201,7 @@ css
 ```
 插入index.html文件
 313行：
-```
+```html
 <div class="modal-body">
 <div class="main-n">
    <div class="main-nn">
