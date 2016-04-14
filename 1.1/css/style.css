@@ -618,6 +618,11 @@ ul.main-l li h3:hover{
    text-align: justify;
    padding-left: 230px;
 }
-
-
-
+/*显示更多内容（ul去掉黑点）*/
+.showMoreNChildren li,.showMoreNChildren2 li{
+   list-style-type: none;
+}
+/*more按钮与图文间距*/
+.btn-lg{
+	margin-bottom: 15px;
+}

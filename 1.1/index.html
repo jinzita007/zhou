@@ -36,6 +36,39 @@
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/tanchu.js"></script>
 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="assets/js/jquery.min.js"></script>
+<!--下拉加载更多内容-->
+<script type="text/javascript" src="js/jquery.showMore.js"></script>
+<!--二次弹窗功能-->
+<script type="text/javascript">
+                $(document).ready(function(){
+                  $(".main-h,.main-hm-i").click(function(){
+
+                    $(".main-m").show();
+
+                    $(".main-m").css({
+                      "opacity":"1",
+                      "visibility":"visible",
+                    });
+                  
+                    $(".main-m-bg").css({
+                      "display":"block",
+                      "cursor":"pointer"
+                    });
+                  });
+                  $(".main-close").click(function(){
+                      $(".main-m").hide();
+                      $(".main-m-bg").css({
+                      "display":"none",
+                      "cursor":"pointer",
+                    });
+                  });
+
+                });
+</script>
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -311,6 +344,8 @@
          </div>
          <div class="modal-body">
           <div class="main-n">
+            <ul class="showMoreNChildren" pagesize="1">
+              <li>
             <div class="main-nn">
                 <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
                 <!--二次弹出效果-->
@@ -327,21 +362,34 @@
                 <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
                 <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div class="main-nn">
-                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
-                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
-                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-           <div class="main-nn">
-                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
-                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
-                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-           <div class="main-nnn">
-                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
-                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
-                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+            </li>
+            <li>
+              <div class="main-nn">
+                  <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                  <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                  <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+            <li>
+              <div class="main-nn">
+                  <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                  <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                  <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+            <li>
+              <div class="main-nnn">
+                  <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                  <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                  <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+        </ul>
+
+              <script type="text/javascript">
+              //调用显示更多内容
+              $.showMore(".showMoreNChildren");
+              </script>
 
           </div>
          </div>
@@ -372,6 +420,8 @@
             <!--<ul class="main-l">
               <li>-->
                 <div class="main-n">
+                  <ul class="showMoreNChildren2" pagesize="1">
+                    <li>
                 <div class="main-nn">
                 <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
                 <!--二次弹出效果-->
@@ -389,21 +439,33 @@
                 <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
                 <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                </div>
+             </li>
+               <li>
                <div class="main-nn">
                 <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
                 <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
                 <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                </div>
+             </li>
+               <li>
                <div class="main-nn">
                 <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
                 <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
                 <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                </div>
+             </li>
+               <li>
                <div class="main-nnn">
                 <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
                 <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
                 <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                </div>
+              </li>
+            </ul>
+              <script type="text/javascript">
+              //调用显示更多内容
+              $.showMore(".showMoreNChildren2");
+              </script>
 
             </div>
          </div>
@@ -438,8 +500,6 @@
     <!--<div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>-->
 
-
-      <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
     </div>
     <div id="row">
@@ -604,36 +664,6 @@
     </div>
   </div>
 </nav>
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="assets/js/jquery.min.js"></script>
- <script type="text/javascript">
-                $(document).ready(function(){
-                  $(".main-h").click(function(){
-
-                    $(".main-m").show();
-
-                    $(".main-m").css({
-                      "opacity":"1",
-                      "visibility":"visible",
-                    });
-                  
-                    $(".main-m-bg").css({
-                      "display":"block",
-                      "cursor":"pointer"
-                    });
-                  });
-                  $(".main-close").click(function(){
-                      $(".main-m").hide();
-                      $(".main-m-bg").css({
-                      "display":"none",
-                      "cursor":"pointer",
-                    });
-                  });
-
-                });
-            </script>
 
 <script src="js/animate.js"></script>
  
