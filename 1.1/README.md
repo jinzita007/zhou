@@ -237,6 +237,8 @@ style.css文件：
 </div>
 </div>
 ```
+以上的效果图：
+![image](https://github.com/jinzita007/zhou/blob/master/1.1/img/tanchuang.jpg)
 
 
 
