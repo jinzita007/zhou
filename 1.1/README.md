@@ -325,6 +325,7 @@ style.css文件
 .btn-lg{
   margin-bottom: 15px;
 }
+
 ```
 
 
@@ -362,8 +363,67 @@ index.html
 </div>
 ```
 
+要增加图片的时候按钮出现弹窗功能
+style.css
+```css
+/*图片时弹窗（详细页)*/
+.main-mm{
+  border-radius: 6px;
+  visibility: hidden;
+  /*top: 0;*/
+    /*left: 0;
+    right: 0;*/
 
+  height: 400px;
+  background: #eee;
+  position: absolute;
+  z-index: 101;
+  text-align: center;
+}
+/*图片时弹窗（详细页)弹出后背景变成透明的暗淡色*/
+.main-mm-bg { 
+  position: fixed; 
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0,0,0,.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0; 
+}
+```
+根据经理的要求下，要删除弹窗时轮播图的功能
+要增加图片时弹窗功能JS文件：
+```javascript
+<!--二次弹窗及图片时弹窗功能-->
+<script type="text/javascript">
+                $(document).ready(function(){
+                  $(".main-h,.main-hm-i,.main-h-img").click(function(){
 
+                    $(".main-m,.main-mm").show();
+
+                    $(".main-m,.main-mm").css({
+                      "opacity":"1",
+                      "visibility":"visible",
+                    });
+                  
+                    $(".main-m-bg,.main-mm-bg").css({
+                      "display":"block",
+                      "cursor":"pointer"
+                    });
+                  });
+                  $(".main-close,.main-mm-close").click(function(){
+                      $(".main-m,.main-mm").hide();
+                      $(".main-m-bg,.main-mm-bg").css({
+                      "display":"none",
+                      "cursor":"pointer",
+                    });
+                  });
+
+                });
+</script>
+```
 
 
 
