@@ -253,7 +253,7 @@ bootstrap.css文件
 加载更多内容的效果：
 首先建立新的jquery文件，实现进行封装
 jquery.showMore.js文件
-```jquery
+```javascript
 (function () {
     var showMoreNChildren = function ($children, n) {
         //显示某jquery元素下的前n个隐藏的子元素
