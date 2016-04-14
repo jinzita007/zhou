@@ -568,27 +568,56 @@ ul.main-l li h3:hover{
 }
 /*弹出后背景变成透明的暗淡色*/
 .main-m-bg { 
-		position: fixed; 
-		height: 100%;
-		width: 100%;
-		background: #000;
-		background: rgba(0,0,0,.8);
-		z-index: 100;
-		display: none;
-		top: 0;
-		left: 0; 
-		}
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+}
 /*二次弹出效果-关闭效果*/
 .main-close{
-        font-size: 22px;
-		position: absolute;
-		top: 8px;
-		right: 11px;
-		color: #aaa;
-		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
-		font-weight: bold;
-		cursor: pointer;
-		display: block;
+    font-size: 22px;
+	position: absolute;
+	top: 8px;
+	right: 11px;
+	color: #aaa;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	display: block;
 }
+
+/*第一次弹窗的内容样式*/
+/*第一次弹窗的内容的主体*/
+.main-nn{
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    
+}
+/*第一次弹窗的内容(小标题)*/
+.main-hm h3{
+    margin-left: 200px;
+}
+.main-hm-i{
+	float: left;
+	position: relative;
+	bottom:55px;
+}
+/*第一次弹窗的内容(图像)*/
+.main-hm-i img{
+    width: 200px;
+    height: 140px;
+}
+/*第一次弹窗的内容(段落)*/
+.main-hm-p{
+   text-align: justify;
+   padding-left: 230px;
+}
+
 
 

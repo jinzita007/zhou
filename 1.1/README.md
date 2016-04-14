@@ -168,4 +168,107 @@ index.html文件：
 </a>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 ```
+注意上面不要了
+
+重新修改情况
+style.css文件：
+```
+css
+/*第一次弹窗的内容样式*/
+/*第一次弹窗的内容的主体*/
+.main-nn{
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    
+}
+/*第一次弹窗的内容(小标题)*/
+.main-hm h3{
+    margin-left: 200px;
+}
+.main-hm-i{
+  float: left;
+  position: relative;
+  bottom:55px;
+}
+/*第一次弹窗的内容(图像)*/
+.main-hm-i img{
+    width: 200px;
+    height: 140px;
+}
+/*第一次弹窗的内容(段落)*/
+.main-hm-p{
+   text-align: justify;
+   padding-left: 230px;
+}
+```
+插入index.html文件
+313行：
+```
+<div class="modal-body">
+<div class="main-n">
+   <div class="main-nn">
+      <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a> //增加class="main-hm"
+      <!--二次弹出效果-->
+      <div class="main-m">
+        ...
+      </div>
+      <div class="main-m-bg"></div>
+                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="main-nn">
+                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+           <div class="main-nn">
+                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+           <div class="main-nnn">
+                <a href="#" class="main-h main-hm"><h3>Jessica Wally</h3></a>
+                <a href="#" class="main-hm-i"><img src="img/team/01.jpg" alt=""></a>
+                <p class="main-hm-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+
+／／插入371行第二次轮播内容同上方法一样
+
+</div>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
