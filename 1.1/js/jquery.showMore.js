@@ -22,7 +22,7 @@
                 $("<div class='showMorehandle'>加载更多</div>").insertAfter($(this)).click(function () {
                     if (showMoreNChildren($children, pagesize) <= 0) {
                         //如果目标元素没有隐藏的子元素了，就隐藏“点击加载更多”
-                        $(this).hide();
+                        $(this).show();
                     };
                 });
             }

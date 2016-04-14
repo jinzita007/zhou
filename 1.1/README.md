@@ -306,11 +306,6 @@ jquery.showMore.js文件
           ...
         </div>
       </li>
-      <li>
-        <div class="main-nnn">
-          ...
-        </div>
-      <li>
   </ul>
  <script type="text/javascript">
     //调用显示更多内容
@@ -330,6 +325,41 @@ style.css文件
 .btn-lg{
   margin-bottom: 15px;
 }
+```
+
+
+下午重新修改文件
+style.css
+```css
+596行
+.main-nn{
+    height: 145px;
+    /*border-bottom: 1px solid #ddd;*/
+    /*margin-bottom: 20px;*/ 
+}
+605行
+.main-hm-i{
+  float: left;
+  position: relative;
+  bottom:45px;
+}
+628行
+/*加载更多的按钮位置*/
+.showMorehandle{
+   position: relative;
+   right: 100px;
+}
+```
+index.html
+594行
+每个四个图片按钮一个弹出详细页（二次弹窗的效果）
+插入<a>的标签
+```html
+<div class="profile-photo">
+  <a href="#" class="main-h">
+    <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+  </a>
+</div>
 ```
 
 

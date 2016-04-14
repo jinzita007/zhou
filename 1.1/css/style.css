@@ -594,10 +594,9 @@ ul.main-l li h3:hover{
 /*第一次弹窗的内容样式*/
 /*第一次弹窗的内容的主体*/
 .main-nn{
-    height: 200px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 50px;
-    
+    height: 145px;
+    /*border-bottom: 1px solid #ddd;*/
+    /*margin-bottom: 20px;*/ 
 }
 /*第一次弹窗的内容(小标题)*/
 .main-hm h3{
@@ -606,7 +605,7 @@ ul.main-l li h3:hover{
 .main-hm-i{
 	float: left;
 	position: relative;
-	bottom:55px;
+	bottom:45px;
 }
 /*第一次弹窗的内容(图像)*/
 .main-hm-i img{
@@ -625,4 +624,9 @@ ul.main-l li h3:hover{
 /*more按钮与图文间距*/
 .btn-lg{
 	margin-bottom: 15px;
+}
+/*加载更多的按钮位置*/
+.showMorehandle{
+   position: relative;
+   right: 100px;
 }
