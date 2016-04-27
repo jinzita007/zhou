@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cZZZRz2" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZZZRz2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.bg-white.cZZZRz2{background-color: rgb(255, 255, 255)} .text-black.cZZZRz2{color: rgb(85, 85, 85)} .x-titlebar.cZZZRz2{background-color: rgb(255, 159, 0)} .x-titlebar-right.cZZZRz2 .btn.cZZZRz2 i.cZZZRz2{font-size: 24px} .row.cZZZRz2{margin: 0} .x-cards.cZZZRz2{padding-top: 15px} .tb-box.cZZZRz2{margin-bottom: 10px; border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .tb-del-line.cZZZRz2{text-decoration: line-through} .x-card.cZZZRz2 .panel-heading.cZZZRz2{padding: 5px 15px} .x-card.cZZZRz2 .panel-heading.cZZZRz2 i.cZZZRz2{margin-right: 13px} .tb-img-shop.cZZZRz2{width: 20px; height: 20px} .tb-img-good.cZZZRz2{width: 93%; height: 100px} .tb-nomargin.cZZZRz2{margin: 0} .tb-nopadding.cZZZRz2{padding: 0} .tb-goodList.cZZZRz2{margin-bottom: 5px} .tb-goodList.cZZZRz2:last-child{margin-bottom: 0px} .tb-goodList.cZZZRz2 .x-col.cZZZRz2:last-child{position: relative} .tb-goodList.cZZZRz2 .h5.cZZZRz2{height: 30px; overflow: hidden; text-overflow: ellipsis} .tb-goodList.cZZZRz2 .h6.cZZZRz2{margin-top: 3px; margin-bottom: 3px} .tb-numberOperation.cZZZRz2{width: 100%; position: absolute; bottom: 0} .tb-numberOperation.cZZZRz2 .btn.cZZZRz2{border-radius: 0} .tb-numberOperation.cZZZRz2 span.cZZZRz2{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .x-panel-bottom.cZZZRz2 .h4.cZZZRz2{margin: 5px 0} .tb-settlement.cZZZRz2{line-height: 40px; background-color: rgb(253, 80, 1); color: rgb(255, 255, 255); font-size: 16px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZZZRz2" class="cZZZRz2"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar p69d9d603701f400badd0f30c3e26ca72-iosstatusbar cZZZRz2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZZZRz2"> 
+    <div class="x-panel-top cZZZRz2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:48}" __cid="cZZZRz2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cZZZRz2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cZZZRz2"> 
+        <div class="x-titlebar-left cZZZRz2" __cid="cZZZRz2">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cZZZRz2" xid="backBtn" bind-visible="$model.calculateData.val(&quot;isBack&quot;)==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cZZZRz2"> 
+            <i xid="i1" class="icon-chevron-left cZZZRz2" __cid="cZZZRz2"/>  
+            <span xid="span3" __cid="cZZZRz2" class="cZZZRz2"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cZZZRz2" __cid="cZZZRz2"> 
+          <span xid="span1" __cid="cZZZRz2" class="cZZZRz2">购物车（</span>  
+          <span xid="span11" bind-text="goodsData.count()" __cid="cZZZRz2" class="cZZZRz2"/>  
+          <span xid="span2" __cid="cZZZRz2" class="cZZZRz2">）</span> 
+        </div>  
+        <div class="x-titlebar-right  cZZZRz2" __cid="cZZZRz2">
+          <div class="empty cZZZRz2" __cid="cZZZRz2"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cZZZRz2" xid="delBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:delBtnClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-trash-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cZZZRz2"> 
+            <i xid="i4" class="icon-ios7-trash-outline cZZZRz2" __cid="cZZZRz2"/>  
+            <span xid="span20" __cid="cZZZRz2" class="cZZZRz2"/> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-scroll-view x-cards cZZZRz2" supportpulldown="true" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZZZRz2"> 
+      <div class="x-scroll cZZZRz2" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;pullUpLabel&quot;:&quot; &quot;}" __cid="cZZZRz2"> 
+        <div class="x-content-center x-pull-down container cZZZRz2" xid="div8" __cid="cZZZRz2"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cZZZRz2" xid="i2" __cid="cZZZRz2"/>  
+          <span class="x-pull-down-label cZZZRz2" xid="span9" __cid="cZZZRz2">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cZZZRz2" xid="div7" __cid="cZZZRz2"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cZZZRz2" xid="shopList" dataItemAlias="shopRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;shopData&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true,&quot;limit&quot;:-1}" __cid="cZZZRz2"> 
+            <ul class="x-list-template x-min-height hide cZZZRz2" xid="listTemplateUl1" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" bind-foreach="{data:$model.foreach_shopList($element),afterRender:$model.foreach_afterRender_shopList.bind($model,$element),as:'shopRow'}" __cid="cZZZRz2"> 
+              <li xid="li1" class="panel panel-default x-card tb-box cZZZRz2" __cid="cZZZRz2"> 
+                <div class="panel-heading cZZZRz2" __cid="cZZZRz2"> 
+                  <i xid="i5" class="icon-chevron-right cZZZRz2" __cid="cZZZRz2"/>  
+                  <img src="" alt="" xid="image3" bind-attr-src="$model.getImageUrl(val(&quot;fShopImg&quot;))" class="img-circle tb-img-shop cZZZRz2" __cid="cZZZRz2"/>  
+                  <span xid="span4" bind-text="ref('fShopName')" __cid="cZZZRz2" class="cZZZRz2"/> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white cZZZRz2" xid="goodsList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true,&quot;filter&quot;:&quot;$row.val('fShopID')==shopRow.val('id')&quot;}" __cid="cZZZRz2"> 
+                  <ul class="x-list-template x-min-height hide cZZZRz2" xid="listTemplateUl4" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" bind-foreach="{data:$model.foreach_goodsList($element),afterRender:$model.foreach_afterRender_goodsList.bind($model,$element)}" __cid="cZZZRz2"> 
+                    <li xid="li4" class="x-min-height tb-goodList cZZZRz2" componentname="li(html)" id="undefined_li4" __cid="cZZZRz2"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cZZZRz2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZZZRz2"> 
+                        <div class="x-col x-col-fixed x-col-center cZZZRz2" xid="col1" style="width:auto;" __cid="cZZZRz2">
+                          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox x-radio choose cZZZRz2" xid="checkbox2" checkedValue="1" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('fChoose'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cZZZRz2">
+                            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cZZZRz2" class="cZZZRz2"/>
+                            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cZZZRz2" class="cZZZRz2"/>
+                          </span>
+                        </div>  
+                        <div class="x-col x-col-fixed tb-nopadding cZZZRz2" xid="col2" style="width:90px;" __cid="cZZZRz2">
+                          <img src="" alt="" xid="image1" bind-attr-src="$model.getImageUrl(val(&quot;fImg&quot;))" class="tb-img-good cZZZRz2" bind-click="listClick" __cid="cZZZRz2"/>
+                        </div>  
+                        <div class="x-col  tb-nopadding cZZZRz2" xid="col3" __cid="cZZZRz2">
+                          <span bind-text="ref('fTitle')" class="x-flex text-black h5 tb-nomargin cZZZRz2" xid="span26" __cid="cZZZRz2"/>  
+                          <div class="text-muted h6 cZZZRz2" xid="div6" __cid="cZZZRz2"> 
+                            <span xid="span27" __cid="cZZZRz2" class="cZZZRz2">颜色:</span>  
+                            <span bind-text="ref('fColor')" xid="span6" __cid="cZZZRz2" class="cZZZRz2"/>  
+                            <span xid="span7" __cid="cZZZRz2" class="cZZZRz2">;</span>  
+                            <span xid="span12" __cid="cZZZRz2" class="cZZZRz2">尺寸:</span>  
+                            <span bind-text="ref('fSize')" xid="span18" __cid="cZZZRz2" class="cZZZRz2"/>
+                          </div>  
+                          <div class="text-muted cZZZRz2" xid="div5" __cid="cZZZRz2"> 
+                            <span xid="span22" class="text-danger cZZZRz2" __cid="cZZZRz2">￥</span>  
+                            <span xid="span28" bind-text="ref('fPrice')" class="h4 text-danger cZZZRz2" __cid="cZZZRz2"/>  
+                            <span xid="span19" class="tb-del-line cZZZRz2" __cid="cZZZRz2">￥</span>  
+                            <span xid="span24" bind-text="ref('fOldPrice')" class="tb-del-line cZZZRz2" __cid="cZZZRz2"/>
+                          </div>  
+                          <div class="tb-numberOperation cZZZRz2" xid="div4" __cid="cZZZRz2"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-left cZZZRz2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reductionBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cZZZRz2"> 
+                              <i xid="i3" class="icon-android-remove cZZZRz2" __cid="cZZZRz2"/>  
+                              <span xid="span13" __cid="cZZZRz2" class="cZZZRz2"/>
+                            </a>  
+                            <span bind-text="ref('fNumber')" class="pull-left cZZZRz2" __cid="cZZZRz2"/>
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-left cZZZRz2" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cZZZRz2"> 
+                              <i xid="i6" class="icon-android-add cZZZRz2" __cid="cZZZRz2"/>  
+                              <span xid="span29" __cid="cZZZRz2" class="cZZZRz2"/>
+                            </a> 
+                          </div>
+                        </div>
+                      </div>
+                    </li> 
+                  </ul> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cZZZRz2" xid="div7" __cid="cZZZRz2"> 
+          <span class="x-pull-up-label cZZZRz2" xid="span8" __cid="cZZZRz2"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cZZZRz2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZZZRz2"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding cZZZRz2" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZZZRz2"> 
+        <div class="x-col x-col-20 x-col-center cZZZRz2" xid="col4" __cid="cZZZRz2">
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cZZZRz2" xid="allChoose" label="全选" checked="false" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;全选&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:allChooseChange" __cid="cZZZRz2">
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cZZZRz2" class="cZZZRz2"/>
+            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cZZZRz2" class="cZZZRz2">全选</xhtml:label>
+          </span>
+        </div>  
+        <div class="x-col cZZZRz2" xid="col8" __cid="cZZZRz2">
+          <div class="text-right cZZZRz2" xid="div9" __cid="cZZZRz2"> 
+            <span xid="span15" class="text-muted cZZZRz2" __cid="cZZZRz2">合计：</span>  
+            <span xid="span17" class="text-danger cZZZRz2" __cid="cZZZRz2">￥</span>  
+            <span xid="sum" class="h4 text-danger cZZZRz2" bind-text="calculateData.ref('allSum')" __cid="cZZZRz2"/>
+          </div>  
+          <div class="text-right cZZZRz2" xid="div10" __cid="cZZZRz2"> 
+            <span xid="span16" __cid="cZZZRz2" class="cZZZRz2">不含运费</span>
+          </div>
+        </div>  
+        <div class="x-col x-col-33 text-center tb-settlement cZZZRz2" xid="col9" bind-click="settlementClick" __cid="cZZZRz2">
+          <span xid="span10" __cid="cZZZRz2" class="cZZZRz2">结算(</span>  
+          <span xid="number" class="allNumber cZZZRz2" bind-text="calculateData.ref('allNumber')" __cid="cZZZRz2"/>  
+          <span xid="span14" __cid="cZZZRz2" class="cZZZRz2">)</span>
+        </div>
+      </div>
+    </div>  
+    <style __cid="cZZZRz2" class="cZZZRz2">.x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p69d9d603701f400badd0f30c3e26ca72-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

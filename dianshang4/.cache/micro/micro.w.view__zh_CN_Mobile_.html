@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cFBVfyy" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFBVfyy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cFBVfyy{color: rgb(51, 51, 51)} .tb-nopadding.cFBVfyy{padding-left: 0; padding-right: 0} .x-panel-top.cFBVfyy .x-titlebar.cFBVfyy{background-color: rgb(255, 159, 0)} .x-titlebar.cFBVfyy .x-titlebar-title.cFBVfyy{font-weight: normal} .x-cards.cFBVfyy{padding: 0} .tb-box.cFBVfyy, .tb-box.cFBVfyy &gt; .col.cFBVfyy{height: 100%; margin: 0; padding: 0} .tb-box.cFBVfyy &gt; .col.cFBVfyy{overflow: auto} .tb-box.cFBVfyy &gt; .col.cFBVfyy:first-child{padding-right: 10px} .list-group.cFBVfyy{box-shadow: none} .list-group-item.cFBVfyy{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.cFBVfyy{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.cFBVfyy h5.cFBVfyy{color: rgb(207, 2, 2)} .tb-listBox.cFBVfyy{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.cFBVfyy div.cFBVfyy{background-color: rgb(255, 255, 255)} .tb-listBox.cFBVfyy p.cFBVfyy{font-size: 13px; margin-top: 5px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cFBVfyy" class="cFBVfyy"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar cFBVfyy" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFBVfyy"> 
+    <div class="x-panel-top cFBVfyy" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:49}" __cid="cFBVfyy"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cFBVfyy" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;商品分类&quot;}" __cid="cFBVfyy"> 
+        <div class="x-titlebar-left cFBVfyy" __cid="cFBVfyy"/>  
+        <div class="x-titlebar-title cFBVfyy" __cid="cFBVfyy">宝贝分类</div>  
+        <div class="x-titlebar-right  cFBVfyy" __cid="cFBVfyy"> 
+          <div class="empty cFBVfyy" __cid="cFBVfyy"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-cards cFBVfyy" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFBVfyy"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-box cFBVfyy" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cFBVfyy"> 
+        <div class="col col-xs-3 cFBVfyy" xid="col10" __cid="cFBVfyy"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-root cFBVfyy" xid="rootClassList" dataItemAlias="rootClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;rootClassData&quot;}" __cid="cFBVfyy"> 
+            <ul class="x-list-template list-group hide cFBVfyy" xid="listTemplateUl1" __cid="cFBVfyy" data-bind="foreach:{data:$model.foreach_rootClassList($element),afterRender:$model.foreach_afterRender_rootClassList.bind($model,$element),as:'rootClassRow'}"> 
+              <li xid="li1" class="list-group-item text-center tb-nopadding cFBVfyy" __cid="cFBVfyy" data-bind="css:{'current':rootClassRow.val('fID')==$model.rootClassData.val('fID')}"> 
+                <h5 xid="h52" class="text-black cFBVfyy" __cid="cFBVfyy" data-bind="text:ref('fClassName')"/> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="col col-xs-9 cFBVfyy" xid="col11" __cid="cFBVfyy"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cFBVfyy" xid="secondClassList" dataItemAlias="secondClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;secondClassData&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;fRootID\&quot;)==$model.rootClassData.val(\&quot;fID\&quot;)&quot;}" __cid="cFBVfyy"> 
+            <ul class="x-list-template hide cFBVfyy" xid="listTemplateUl2" __cid="cFBVfyy" data-bind="foreach:{data:$model.foreach_secondClassList($element),afterRender:$model.foreach_afterRender_secondClassList.bind($model,$element),as:'secondClassRow'}"> 
+              <li xid="li2" __cid="cFBVfyy" class="cFBVfyy"> 
+                <h5 class="text-muted cFBVfyy" __cid="cFBVfyy" data-bind="text:ref('fClassName')"/>  
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list clearfix cFBVfyy" xid="threeClassList" dataItemAlias="threeClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'listClick')}" data-config="{&quot;data&quot;:&quot;threeClassData&quot;,&quot;filter&quot;:&quot;$row.val('fSecondID')==secondClassRow.val('fID')&quot;}" __cid="cFBVfyy"> 
+                  <ul class="x-list-template hide cFBVfyy" xid="listTemplateUl3" __cid="cFBVfyy" data-bind="foreach:{data:$model.foreach_threeClassList($element),afterRender:$model.foreach_afterRender_threeClassList.bind($model,$element),as:'threeClassRow'}"> 
+                    <li xid="li3" class="col col-xs-4 text-center tb-listBox text-black cFBVfyy" __cid="cFBVfyy"> 
+                      <div __cid="cFBVfyy" class="cFBVfyy"> 
+                        <img src="" alt="" class="img-responsive cFBVfyy" __cid="cFBVfyy" data-bind="attr:{src:$model.getImageUrl(val(&quot;fClassImg&quot;))}"/>  
+                        <p __cid="cFBVfyy" class="cFBVfyy" data-bind="text:val(&quot;fClassName&quot;)"/> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cFBVfyy" class="cFBVfyy">.x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-top {height: 49px;}.x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-content { top: 49px;bottom: nullpx;}.x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-top {height: 69px;}.iosstatusbar .x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-content { top: 69px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-top {height: 49px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3ed014e7233e4b76a17260bf1a8fc83e-iosstatusbar &gt;.x-panel-content {top: 49px;}</style> 
+  </div> 
+</div>

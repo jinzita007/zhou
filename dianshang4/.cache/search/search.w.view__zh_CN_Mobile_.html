@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cBFjuYz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBFjuYz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cBFjuYz{background-color: rgb(255, 68, 0)} .tb-index.x-titlebar.cBFjuYz .x-titlebar-title.cBFjuYz{padding: 10px 0} .tb-index.x-titlebar.cBFjuYz .form-group.cBFjuYz input.cBFjuYz{font-size: 16px; background-color: rgb(255, 68, 0); border-top: 0; border-left: 0; border-right: 0} .tb-index.x-titlebar.cBFjuYz .form-group.cBFjuYz input.cBFjuYz:focus{box-shadow: none} .btn-group.cBFjuYz{border-top: 1px solid rgb(231, 231, 231); border-bottom: 1px solid rgb(231, 231, 231)} .btn-group.cBFjuYz .btn.cBFjuYz{border-left: 1px solid rgb(231, 231, 231)} .text-black.cBFjuYz{color: rgb(85, 85, 85)} .text-white.cBFjuYz{color: rgb(255, 255, 255)} .x-list.cBFjuYz li.cBFjuYz{padding: 10px; border-bottom: 1px solid rgb(231, 231, 231)} .x-list.cBFjuYz li.cBFjuYz i.cBFjuYz{margin-top: 10px} .tb-clearBtn.btn-default.cBFjuYz{border-color: rgb(255, 68, 0); background-color: rgb(255, 255, 255); color: rgb(255, 68, 0); padding: 4px 20px} .tb-title.cBFjuYz{padding: 10px; border-bottom: 1px solid rgb(231, 231, 231)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cBFjuYz" class="cBFjuYz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card p6a877f92c95d44a496071c25bf5595ca-iosstatusbar cBFjuYz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBFjuYz"> 
+    <div class="x-panel-top cBFjuYz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:48}" __cid="cBFjuYz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar tb-index cBFjuYz" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cBFjuYz"> 
+        <div class="x-titlebar-left cBFjuYz" xid="div1" __cid="cBFjuYz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cBFjuYz" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;搜索&quot;}" __cid="cBFjuYz"> 
+            <i xid="i6" class="icon-chevron-left cBFjuYz" __cid="cBFjuYz"/>  
+            <span xid="span6" __cid="cBFjuYz" class="cBFjuYz">搜索</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cBFjuYz" xid="div2" __cid="cBFjuYz"> 
+          <div class="form-group has-feedback cBFjuYz" xid="formGroup1" __cid="cBFjuYz"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm text-white cBFjuYz" xid="keyInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{focus:$model._callModelFn.bind($model, 'keyInputFocus')}" __cid="cBFjuYz"/>  
+            <i class="icon-ios7-search-strong form-control-feedback cBFjuYz" xid="col3" __cid="cBFjuYz"/> 
+          </div> 
+        </div>  
+        <div class="x-titlebar-right  cBFjuYz" xid="div3" __cid="cBFjuYz"> 
+          <div class="empty cBFjuYz" __cid="cBFjuYz"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-yellow btn-only-label more cBFjuYz" xid="searchBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:searchBtnClick" data-config="{&quot;label&quot;:&quot;搜索&quot;}" __cid="cBFjuYz"> 
+            <i xid="i11" __cid="cBFjuYz" class="cBFjuYz"/>  
+            <span xid="span10" __cid="cBFjuYz" class="cBFjuYz">搜索</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-cards cBFjuYz" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBFjuYz"> 
+      <div class="panel x-card cBFjuYz" __cid="cBFjuYz" data-bind="visible:$model.searchKeyData.count()&gt;0"> 
+        <div class="tb-title text-muted cBFjuYz" __cid="cBFjuYz">历史搜索</div>  
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cBFjuYz" xid="keyMenuList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'liClick')}" data-config="{&quot;data&quot;:&quot;searchKeyData&quot;}" __cid="cBFjuYz"> 
+          <ul class="x-list-template x-min-height hide cBFjuYz" xid="ul1" componentname="ul(html)" id="undefined_ul1" __cid="cBFjuYz" data-bind="foreach:{data:$model.foreach_keyMenuList($element),afterRender:$model.foreach_afterRender_keyMenuList.bind($model,$element)}"> 
+            <li xid="li1" class="x-min-height cBFjuYz" componentname="li(html)" id="undefined_li1" __cid="cBFjuYz"> 
+              <i xid="i1" class="icon-ios7-arrow-right pull-right cBFjuYz" __cid="cBFjuYz"/>  
+              <h5 class="text-black cBFjuYz" __cid="cBFjuYz" data-bind="text:ref('key')"/> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>  
+      <div class="text-center cBFjuYz" __cid="cBFjuYz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default tb-clearBtn cBFjuYz" xid="clearBtn" style="display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.comp(&quot;searchKeyData&quot;).count()&gt;0" data-events="onClick:clearBtnClick" data-config="{&quot;label&quot;:&quot;清空搜索历史&quot;}" __cid="cBFjuYz"> 
+          <i xid="i2" __cid="cBFjuYz" class="cBFjuYz"/>  
+          <span xid="span1" __cid="cBFjuYz" class="cBFjuYz">清空搜索历史</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cBFjuYz" class="cBFjuYz">.x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6a877f92c95d44a496071c25bf5595ca-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>
