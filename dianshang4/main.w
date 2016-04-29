@@ -59,7 +59,7 @@
                   <div component="$UI/system/components/justep/panel/panel"
                     class="panel panel-default x-card" xid="panel1"> 
                     <div component="$UI/system/components/bootstrap/carousel/carousel"
-                      class="x-carousel carousel" xid="carousel1" auto="true" style="height:133px;"> 
+                      class="x-carousel carousel" xid="carousel1" auto="true" style="height:200px;"> 
                       <ol class="carousel-indicators" xid="ol1"/>  
                       <div class="x-contents carousel-inner" role="listbox"
                         component="$UI/system/components/justep/contents/contents"
@@ -78,7 +78,7 @@
                       <tbody class="x-list-template" xid="listTemplate2"> 
                         <tr xid="tr1"> 
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td1"> 
+                            xid="td1" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div2"> 
                               <img src="./main/img/01.png" alt="" xid="image3"
                                 class="img-responsive center-block tb-img5"/>  
@@ -86,7 +86,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td2"> 
+                            xid="td2" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div3"> 
                               <img src="./main/img/02.png" alt="" xid="image1"
                                 class="img-responsive center-block tb-img5"/>  
@@ -94,7 +94,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td3"> 
+                            xid="td3" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div4"> 
                               <img src="./main/img/03.png" alt="" xid="image2"
                                 class="img-responsive center-block tb-img5"/>  
@@ -102,7 +102,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td4"> 
+                            xid="td4" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div7"> 
                               <img alt="" xid="image8" src="./main/img/04.png"
                                 class="img-responsive center-block tb-img5"/>  
@@ -110,7 +110,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td5"> 
+                            xid="td5" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div8"> 
                               <img alt="" xid="image9" src="./main/img/05.png"
                                 class="img-responsive center-block tb-img5"/>  
@@ -120,7 +120,7 @@
                         </tr>  
                         <tr xid="tr2"> 
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td6"> 
+                            xid="td6" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div2"> 
                               <img alt="" xid="image3" src="./main/img/06.png"
                                 class="img-responsive center-block tb-img5"/>  
@@ -128,7 +128,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td7"> 
+                            xid="td7" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div3"> 
                               <img alt="" xid="image1" src="./main/img/07.png"
                                 class="img-responsive center-block tb-img5"/>  
@@ -136,7 +136,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td8"> 
+                            xid="td8" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div4"> 
                               <img alt="" xid="image2" src="./main/img/08.png"
                                 class="img-responsive center-block tb-img5"/>  
@@ -144,7 +144,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./list.w"
-                            xid="td9"> 
+                            xid="td9" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div7"> 
                               <img alt="" xid="image8" src="./main/img/09.png"
                                 class="img-responsive center-block tb-img5"/>  
@@ -152,7 +152,7 @@
                             </div> 
                           </td>  
                           <td bind-click="openPageClick" pagename="./class.w"
-                            xid="td10"> 
+                            xid="td10" style="border:1px #e3e3e3 solid;border-left:none;border-bottom:none;"> 
                             <div class="text-center" xid="div8"> 
                               <img alt="" xid="image9" src="./main/img/10.png"
                                 class="img-responsive center-block tb-img5"/>  

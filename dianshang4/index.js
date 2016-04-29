@@ -26,6 +26,15 @@ define(function(require){
 				"cart":{
 					url : require.toUrl('./cart.w')
 				},
+				"login":{
+					url : require.toUrl('./login.w')
+				},
+				"register":{
+					url : require.toUrl('./register.w')
+				},
+				"forgot":{
+					url : require.toUrl('./forgot.w')
+				},
 				"order":{
 					url : require.toUrl('./order.w')
 				},

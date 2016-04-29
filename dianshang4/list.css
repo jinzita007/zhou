@@ -7,7 +7,7 @@
 /*顶部titlebar**/
 .x-titlebar{ background-color:#FF9F00;}
 .tb-index.x-titlebar .x-titlebar-title{ padding:10px 0;}
-.tb-index.x-titlebar .form-group input{ font-size:16px; background-color:#ff4400; border-top:0; border-left:0; border-right:0;}
+.tb-index.x-titlebar .form-group input{ font-size:16px; background-color:#FF9F00; border-top:0; border-left:0; border-right:0;}
 .tb-index.x-titlebar .form-group input:focus{ box-shadow:none;}
 
 .tb-nopadding{ padding:0;}

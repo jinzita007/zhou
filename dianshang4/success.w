@@ -18,6 +18,6 @@
        <i xid="i3" class="icon-android-checkmark  text-success"></i>
        <span xid="span7"></span></a> </div><div class="media-body" xid="div7">
       <h4 class="text-success" xid="h41"><![CDATA[购物成功]]></h4> 
-      <h5 class="text-muted" xid="h51">收货地址：云南省昆明市高新区昌源北路300号城市新A座1508室</h5>
+      <h5 class="text-muted" xid="h51"><![CDATA[收货地址：北京市海淀区西三旗新都环岛西程远大厦B座526室]]></h5>
       <h5 class="text-warning" xid="h52"><![CDATA[（请注意查收）]]></h5></div></div></div> 
    </div></div>

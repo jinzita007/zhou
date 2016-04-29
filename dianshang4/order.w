@@ -2,7 +2,7 @@
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window"
   design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;left:84px;top:18px;" onParamsReceive="modelParamsReceive"> 
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;left:309px;top:1px;" onParamsReceive="modelParamsReceive"> 
     <div component="$UI/system/components/justep/data/data" autoLoad="true"
       xid="goodsData" idColumn="id" limit="20" confirmRefresh="false" confirmDelete="false"
       onCustomRefresh="goodsDataCustomRefresh"> 
@@ -111,10 +111,8 @@
           </a> 
         </div>  
         <div class="media-body"> 
-          <h4 class="text-black"><![CDATA[收货人：张三]]>  
-            <span xid="span9" class="pull-right"><![CDATA[13758547152]]></span> 
-          </h4>  
-          <h5 class="text-black"><![CDATA[收货地址：云南省昆明市高新区昌源北路300号城市新A座1508室]]></h5>  
+          <h4 class="text-black"><![CDATA[收货人：京华]]></h4>  
+          <h5 class="text-black"><![CDATA[收货地址：北京市海淀区西三旗新都环岛西程远大厦B座526室]]></h5>  
           <h5 class="text-warning"><![CDATA[（收货不方便时，可选择代收货服务）]]></h5> 
         </div>  
         <div class="media-right media-middle"> 
