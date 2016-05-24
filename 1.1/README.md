@@ -1,6 +1,7 @@
 一、index.html文件：
 
 jquery.showMore.js的位置：js/jquery.showMore.js
+
 查看更多内容特效：
 ```javascript 
  (function () {
@@ -37,6 +38,7 @@ jquery.showMore.js的位置：js/jquery.showMore.js
 ```
 
 index.html文件
+
 增加一些幻灯片轮播图的功能
 
 ```html
@@ -93,7 +95,9 @@ index.html文件
     </div>
 ```
 多幅轮播图特效：
+
 引入owlcarousel.js文件
+
 animate.js文件
 ```javascript 
 $(function(){
@@ -112,7 +116,8 @@ $(function(){
 ```
 
 css位置：css/style.css
-二、style.css文件
+
+style.css文件
 536行：
 ```css
 /*模态框的内容－图片*/
@@ -251,7 +256,8 @@ css位置：css/style.css
   display: block;
 }
 ```
-三、插入二次弹出层的html内容：
+插入二次弹出层的html内容：
+
 312行：
 ```html
  <div class="modal-body">
@@ -274,7 +280,9 @@ css位置：css/style.css
   </div>
 ```
 index.html文件
+
 二次弹窗及图片时弹窗功能：
+
 44行：
 ```javascript  
                 $(document).ready(function(){
@@ -306,6 +314,7 @@ index.html文件
 
 
 index.html文件：
+
 按钮触发模态框效果图
 
 ```html
@@ -512,6 +521,7 @@ index.html文件：
 ```
 
 animate.css文件：
+
 主要是鼠标按图片变大的特效：
 ```css
 #owl-demo .item {
