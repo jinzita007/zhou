@@ -594,9 +594,10 @@ ul.main-l li h3:hover{
 /*第一次弹窗的内容样式*/
 /*第一次弹窗的内容的主体*/
 .main-nn{
-    height: 145px;
-    /*border-bottom: 1px solid #ddd;*/
-    /*margin-bottom: 20px;*/ 
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    
 }
 /*第一次弹窗的内容(小标题)*/
 .main-hm h3{
@@ -605,7 +606,7 @@ ul.main-l li h3:hover{
 .main-hm-i{
 	float: left;
 	position: relative;
-	bottom:45px;
+	bottom:55px;
 }
 /*第一次弹窗的内容(图像)*/
 .main-hm-i img{
@@ -617,54 +618,6 @@ ul.main-l li h3:hover{
    text-align: justify;
    padding-left: 230px;
 }
-/*显示更多内容（ul去掉黑点）*/
-.showMoreNChildren li,.showMoreNChildren2 li{
-   list-style-type: none;
-}
-/*more按钮与图文间距*/
-.btn-lg{
-	margin-bottom: 15px;
-}
-/*加载更多的按钮位置*/
-.showMorehandle{
-   position: relative;
-   right: 100px;
-}
-/*图片时弹窗（详细页)*/
-.main-mm{
-	border-radius: 6px;
-	visibility: hidden;
-	/*top: 0;*/
-    /*left: 0;
-    right: 0;*/
 
-	height: 400px;
-	background: #eee;
-	position: absolute;
-	z-index: 101;
-	text-align: center;
-}
-/*图片时弹窗（详细页)弹出后背景变成透明的暗淡色*/
-.main-mm-bg { 
-	position: fixed; 
-	height: 100%;
-	width: 100%;
-	background: #000;
-	background: rgba(0,0,0,.8);
-	z-index: 100;
-	display: none;
-	top: 0;
-	left: 0; 
-}
-/*图片时弹窗（详细页)-关闭效果*/
-.main-mm-close{
-    font-size: 22px;
-	position: absolute;
-	top: 8px;
-	right: 11px;
-	color: #aaa;
-	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
-	font-weight: bold;
-	cursor: pointer;
-	display: block;
-}
+
+
