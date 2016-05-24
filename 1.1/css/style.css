@@ -643,6 +643,7 @@ ul.main-l li h3:hover{
 	position: absolute;
 	z-index: 101;
 	text-align: center;
+	margin-left: 20%;
 }
 /*图片时弹窗（详细页)弹出后背景变成透明的暗淡色*/
 .main-mm-bg { 
